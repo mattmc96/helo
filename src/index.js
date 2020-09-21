@@ -1,14 +1,22 @@
+/* eslint-disable no-undef */
+/** @format */
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import { HashRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import store from './duckyz/store';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <Provider store={store}>
+    <HashRouter>
+      <App />
+    </HashRouter>
+  </Provider>,
+  document.getElementById('root'),
 );
 
 // If you want your app to work offline and load faster, you can change

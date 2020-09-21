@@ -1,0 +1,65 @@
+/** @format */
+
+.landing {
+  width: 100vw;
+  height: 100vh;
+  background-image: -webkit-linear-gradient(#ff70a6, #ff9770, #e9ff70);
+  background-image: -o-linear-gradient(
+    351deg,
+    #ff70a6,
+    #ff9770,
+    #ffd670,
+    #e9ff70
+  );
+  background-image: linear-gradient(99deg, #ff70a6, #ff9770, #ffd670, #e9ff70);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: white;
+}
+
+.auth-container {
+  border-radius: 8px;
+  background-image: linear-gradient(#ff7a6e, #ffd670);
+  width: 35vw;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  border: 1px black;
+}
+.auth_title {
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.auth_input_box {
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+}
+
+.auth_input_box > input:focus {
+  outline-color: #ff9770;
+  outline-width: 5px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-around;
+  width: 55%;
+}
+
+.username-text {
+  background-image: linear-gradient(white, gray);
+}
+.password-text {
+  background-image: linear-gradient(white, gray);
+}
